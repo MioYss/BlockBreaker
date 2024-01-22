@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8417573168293998894}
   - component: {fileID: 3316196788398875894}
   - component: {fileID: 4914510588968164478}
+  - component: {fileID: -894926219750956559}
   m_Layer: 0
   m_Name: Brick_1_Hit
   m_TagString: Brick_01
@@ -130,3 +131,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &-894926219750956559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8129902609105990284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6697d73a007dff04f95955b6cfbed13d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Brick: {fileID: 8129902609105990284}
+  spawn_bonus_joueur: {fileID: 6195433406617566937, guid: e66cf8538ab036240b85eb4c7b22ab74, type: 3}
+  parent_ennemies: {fileID: 8417573168293998894}

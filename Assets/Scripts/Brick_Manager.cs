@@ -5,47 +5,33 @@ using UnityEngine;
 public class Brick_Manager : MonoBehaviour
 {
 
-    int brick_pv = 1;
+    public int brick_pv = 1;
 
     public GameObject Brick;
-    private void OnCollisionEnter2D(Collision2D brick)
-    {
 
-            Debug.Log("hit");
+    public GameObject spawn_bonus_joueur;
+
+    public Transform parent_ennemies;
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.tag == "Ball")
+        {
             Perte_PV_Brick();
+        }
+
     }
 
     public void Perte_PV_Brick ()
     {
-        if (GameObject.FindWithTag("Brick_01"))
+        brick_pv--;
+
+        if (brick_pv >= 0)
         {
-            brick_pv--;
-
-            if (brick_pv >= 0)
-            {
-                Destroy(this.gameObject);
-            }
-        }
-
-        if (GameObject.FindWithTag("Brick_02"))
-        {
-            brick_pv--;
-
-            if (brick_pv >= 0)
-            {
-                Destroy(this.gameObject);
-            }
-        }
-
-        if (GameObject.FindWithTag("Brick_03"))
-        {
-            brick_pv--;
-
-            if (brick_pv >= 0)
-            {
-                Destroy(this.gameObject);
-            }
+            Destroy(this.gameObject);
+            Instantiate(spawn_bonus_joueur, parent_ennemies.position, Quaternion.identity);
         }
     }
+
 
 }
