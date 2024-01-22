@@ -6,7 +6,7 @@ public class Ball_Manager : MonoBehaviour
 {
 
 
-    public GameObject ball;
+    //public GameObject ball;
 
     private GameObject current_ball;
     public Rigidbody2D ball_rigidbody;
@@ -22,9 +22,9 @@ public class Ball_Manager : MonoBehaviour
         
 
         speed.x = 0f;
-        speed.y = 100f;
+        speed.y = 1000f;
 
-        ball_rigidbody.AddForce(speed);
+        
     }
 
     // Update is called once per frame
@@ -41,7 +41,7 @@ public class Ball_Manager : MonoBehaviour
         if (collision.gameObject.CompareTag("Barre"))
         {
             Debug.Log("touche barre");
-            
+            ball_rigidbody.AddForce(speed);
 
         }
     }

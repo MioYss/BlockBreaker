@@ -463,8 +463,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.4
-  limit_L: {fileID: 0}
-  limit_R: {fileID: 0}
+  limit_L: {fileID: 1213141554}
+  limit_R: {fileID: 858089733}
 --- !u!1 &1213141553
 GameObject:
   m_ObjectHideFlags: 0
