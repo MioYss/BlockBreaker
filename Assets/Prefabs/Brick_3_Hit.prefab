@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6022961391971942289}
   m_Layer: 0
   m_Name: Brick_3_Hit
-  m_TagString: Untagged
+  m_TagString: Brick_03
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

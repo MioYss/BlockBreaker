@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Brick_01
+  - Brick_02
+  - Brick_03
+  - Ball
   layers:
   - Default
   - TransparentFX
