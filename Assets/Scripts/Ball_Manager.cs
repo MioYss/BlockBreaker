@@ -6,11 +6,25 @@ public class Ball_Manager : MonoBehaviour
 {
 
 
-    GameObject current_ball;
+    public GameObject ball;
+
+    private GameObject current_ball;
+    public Rigidbody2D ball_rigidbody;
+
+    public Vector2 speed;
+
+
+
     // Start is called before the first frame update
     void Start()
     {
-        Instantiate(current_ball);
+        //current_ball = Instantiate(ball);
+        
+
+        speed.x = 0f;
+        speed.y = 100f;
+
+        ball_rigidbody.AddForce(speed);
     }
 
     // Update is called once per frame
@@ -19,6 +33,18 @@ public class Ball_Manager : MonoBehaviour
         
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log("touche tout court");
+
+        // si la collision est avec la barre
+        if (collision.gameObject.CompareTag("Barre"))
+        {
+            Debug.Log("touche barre");
+            
+
+        }
+    }
 
 
 
