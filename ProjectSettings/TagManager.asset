@@ -8,6 +8,8 @@ TagManager:
   - Brick_02
   - Brick_03
   - Ball
+  - Barre
+  - Power_Up
   layers:
   - Default
   - TransparentFX
