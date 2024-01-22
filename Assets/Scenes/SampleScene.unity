@@ -447,7 +447,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3078055100734676384, guid: 4e5b9656770f77a4bb48d47722e563b0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 946612228}
   m_SourcePrefab: {fileID: 100100000, guid: 4e5b9656770f77a4bb48d47722e563b0, type: 3}
 --- !u!1 &946612226 stripped
 GameObject:
@@ -459,6 +462,20 @@ Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 2578250618693198188, guid: 4e5b9656770f77a4bb48d47722e563b0, type: 3}
   m_PrefabInstance: {fileID: 946612225}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &946612228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 946612226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e474ae1d3b003b4ea0e07140e8554cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ball_rigidbody: {fileID: 946612227}
+  speed: {x: 0, y: 0}
 --- !u!1001 &1041783857
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -631,7 +648,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e474ae1d3b003b4ea0e07140e8554cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ball: {fileID: 946612226}
   ball_rigidbody: {fileID: 946612227}
   speed: {x: 0, y: 0}
 --- !u!1660057539 &9223372036854775807
