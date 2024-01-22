@@ -26,6 +26,26 @@ public class Brick_Manager : MonoBehaviour
                 Destroy(this.gameObject);
             }
         }
+
+        if (GameObject.FindWithTag("Brick_02"))
+        {
+            brick_pv--;
+
+            if (brick_pv >= 0)
+            {
+                Destroy(this.gameObject);
+            }
+        }
+
+        if (GameObject.FindWithTag("Brick_03"))
+        {
+            brick_pv--;
+
+            if (brick_pv >= 0)
+            {
+                Destroy(this.gameObject);
+            }
+        }
     }
 
 }
