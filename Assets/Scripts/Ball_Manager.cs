@@ -33,7 +33,7 @@ public class Ball_Manager : MonoBehaviour
         
 
         speed.x = 0f;
-        speed.y = -20f;
+        speed.y = -2f;
 
         ball_rigidbody.velocity = speed;
 

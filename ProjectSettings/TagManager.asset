@@ -10,6 +10,7 @@ TagManager:
   - Ball
   - Barre
   - Power_Up
+  - Destruction
   layers:
   - Default
   - TransparentFX
