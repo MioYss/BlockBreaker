@@ -8,6 +8,7 @@ public class Brick_Manager : MonoBehaviour
     public int brick_pv = 1;
 
     public GameObject Brick;
+    public SpriteRenderer BrickRenderer;
 
     public GameObject spawn_bonus_joueur;
 
@@ -25,13 +26,17 @@ public class Brick_Manager : MonoBehaviour
     public void Perte_PV_Brick ()
     {
         brick_pv--;
+        Debug.Log(brick_pv);
 
-        if (brick_pv >= 0)
+        if (brick_pv <= 0)
         {
             Destroy(this.gameObject);
             Instantiate(spawn_bonus_joueur, parent_ennemies.position, Quaternion.identity);
         }
     }
 
-
+    // pour faire en sorte que les couleurs soient associées a un certain nombre de pv de la brique : creer tableau de couleurs avec comme indice chaque pv a peu pres
+    // tab[blue, orange, red] en gros
+    // BrickRenderer.color = tab[brick_pv -1];
+    // se renseigner sur comment on ecrit les liste en c# jai oublié
 }
