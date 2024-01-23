@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Bar_Mouvement : MonoBehaviour
@@ -26,5 +27,14 @@ public class Bar_Mouvement : MonoBehaviour
         {
             transform.position = new Vector3(limit_L.position.x, transform.position.y, transform.position.z);
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        // prend le power up
+        Debug.Log("power up actif");
+
+
+        Destroy(collision.gameObject);
     }
 }

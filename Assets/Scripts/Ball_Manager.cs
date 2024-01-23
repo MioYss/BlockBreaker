@@ -91,7 +91,7 @@ public class Ball_Manager : MonoBehaviour
             Debug.Log("hit pos = " + hit_pos);
 
 
-            speed.x = -hit_pos*hit_pos*hit_pos*3;
+            speed.x = -hit_pos*hit_pos*hit_pos*5;
             speed.y = -speed.y;
         }
 
