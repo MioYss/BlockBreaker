@@ -846,6 +846,7 @@ MonoBehaviour:
   speed: 0.2
   limit_L: {fileID: 1213141554}
   limit_R: {fileID: 858089733}
+  Power_Tir: {fileID: 2626626421911542947, guid: f4532786faa08b3448d06c26d9dcd149, type: 3}
 --- !u!4 &1041783862 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5993952961345458187, guid: 1084815555e0b934dbed8260dd21fe81, type: 3}

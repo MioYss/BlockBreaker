@@ -8,6 +8,8 @@ public class Bar_Mouvement : MonoBehaviour
     public float speed = 0.4f;
     public Transform limit_L;
     public Transform limit_R;
+
+    public Bullet Power_Tir;
     void Update()
     {
         if (Input.GetKey(KeyCode.LeftArrow))
@@ -34,6 +36,7 @@ public class Bar_Mouvement : MonoBehaviour
         // prend le power up
         Debug.Log("power up actif");
 
+        Power_Tir.Power_Up_Tir();
 
         Destroy(collision.gameObject);
     }

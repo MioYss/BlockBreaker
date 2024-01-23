@@ -57,8 +57,8 @@ public class Brick_Manager : MonoBehaviour
         }
     }
 
-    // pour faire en sorte que les couleurs soient associées a un certain nombre de pv de la brique : creer tableau de couleurs avec comme indice chaque pv a peu pres
+    // pour faire en sorte que les couleurs soient associï¿½es a un certain nombre de pv de la brique : creer tableau de couleurs avec comme indice chaque pv a peu pres
     // tab[blue, orange, red] en gros
     // BrickRenderer.color = tab[brick_pv -1];
-    // se renseigner sur comment on ecrit les liste en c# jai oublié
+    // se renseigner sur comment on ecrit les liste en c# jai oubliï¿½
 }
