@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -12,9 +13,12 @@ public class Ball_Manager : MonoBehaviour
     private GameObject current_ball;
     public Rigidbody2D ball_rigidbody;
 
+    public Transform barre_transform;
+    public Transform ball_transform;
+
     public Vector2 speed;
 
-    private Vector2 _direction;
+    private float hit_pos;
 
     public Transform limit_L;
     public Transform limit_R;
@@ -45,14 +49,12 @@ public class Ball_Manager : MonoBehaviour
         if (transform.position.x < limit_L.position.x)
         {
             speed.x = 20f;
-            speed.y = 0f;
 
             ball_rigidbody.velocity = speed;
         }
         if (transform.position.x > limit_R.position.x)
         {
             speed.x = -20f;
-            speed.y = 0f;
 
             ball_rigidbody.velocity = speed;
         }
@@ -65,29 +67,43 @@ public class Ball_Manager : MonoBehaviour
         }
         if (transform.position.y > limit_H.position.y)
         {
-            speed.x = 0f;
             speed.y = -20f;
 
-            ball_rigidbody.velocity = speed;
+            
 
         }
+
+        if (speed.y == 0f)
+        {
+            speed.y = 1f;
+        }
+
+        ball_rigidbody.velocity = speed;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        speed.x = -speed.x;
-        speed.y = -speed.y;
-
-        ball_rigidbody.velocity = speed;
-        Debug.Log("touche tout court");
-
         // si la collision est avec la barre
-       /* if (collision.gameObject.CompareTag("Barre"))
+        if (collision.gameObject.CompareTag("Barre"))
         {
-            Debug.Log("touche barre");
-            
+            hit_pos = barre_transform.position.x - ball_transform.position.x;
 
-        }*/
+            Debug.Log("hit pos = " + hit_pos);
+
+
+            speed.x = -hit_pos*hit_pos*hit_pos*3;
+            speed.y = -speed.y;
+        }
+
+        else
+        {
+            speed.x = -speed.x;
+            speed.y = -speed.y;
+
+            
+            Debug.Log("touche tout court");
+        }
+        ball_rigidbody.velocity = speed;
     }
 
 
