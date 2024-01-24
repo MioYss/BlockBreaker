@@ -19,7 +19,8 @@ public class Bullet : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Brick")
+        var brick = collision.gameObject.GetComponent<Brick_Manager>();
+        if (brick)
         {            
             Brick.Perte_PV_Brick();
             Destroy(this.gameObject);
