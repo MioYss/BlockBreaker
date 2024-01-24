@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1691615618101473187}
   - component: {fileID: 4425146676510640749}
   - component: {fileID: 2578250618693198188}
+  - component: {fileID: -6153262087070704960}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Ball
@@ -148,3 +149,23 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &-6153262087070704960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3078055100734676384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e474ae1d3b003b4ea0e07140e8554cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ball_rigidbody: {fileID: 2578250618693198188}
+  barre_transform: {fileID: 5993952961345458187, guid: 1084815555e0b934dbed8260dd21fe81, type: 3}
+  ball_transform: {fileID: 5686863654403305572}
+  speed: {x: 0, y: 0}
+  limit_L: {fileID: 7164246672794707013, guid: 061b8cee1bc5b6946a1378ce19ec91cc, type: 3}
+  limit_R: {fileID: 6334386783745802787, guid: 5a588cc2921e9bd4f938085094162144, type: 3}
+  limit_H: {fileID: 1026112997877474361, guid: 5fdf4acc7b622234faf2009b0ff31bcd, type: 3}
+  limit_B: {fileID: 3920329460234894320, guid: e540000cc599be64fa863e11df11c880, type: 3}
