@@ -9,7 +9,14 @@ public class Bar_Mouvement : MonoBehaviour
     public Transform limit_L;
     public Transform limit_R;
 
-    public Bullet Power_Tir;
+    public Transform parent_L;
+    public Transform parent_R;
+    public GameObject Bullet_Shoot;
+
+
+    private Vector2 spawn_L, spawn_R;
+
+
     void Update()
     {
         if (Input.GetKey(KeyCode.LeftArrow))
@@ -36,8 +43,35 @@ public class Bar_Mouvement : MonoBehaviour
         // prend le power up
         Debug.Log("power up actif");
 
-        Power_Tir.Power_Up_Tir();
+        Bullet_Shoot.SetActive(true);
+        Power_Up_Tir();
 
         Destroy(collision.gameObject);
+    }
+    public void Power_Up_Tir()
+    {
+        Debug.Log("power up activer mama");
+        Bullet_Shoot.SetActive(true);
+        StartCoroutine(Temps_De_Tir());
+    }
+    public IEnumerator Temps_De_Tir()
+    {
+        Debug.Log("power up activer mama2");
+        for (int i = 0; i <= 10; i++)
+        {
+
+            spawn_L.x = parent_L.position.x;
+            spawn_L.y = parent_L.position.y - 8.66f;
+
+            spawn_R.x = parent_R.position.x;
+            spawn_R.y = parent_R.position.y - 8.66f;
+
+            Instantiate(Bullet_Shoot, spawn_L, parent_L.rotation);
+
+            Instantiate(Bullet_Shoot, spawn_R, parent_R.rotation);
+            yield return new WaitForSeconds(0.5f);
+        }
+
+
     }
 }

@@ -33,7 +33,7 @@ public class Ball_Manager : MonoBehaviour
         
 
         speed.x = 0f;
-        speed.y = -2f;
+        speed.y = -20f;
 
         ball_rigidbody.velocity = speed;
 
@@ -105,8 +105,4 @@ public class Ball_Manager : MonoBehaviour
         }
         ball_rigidbody.velocity = speed;
     }
-
-
-
-    //TODO: rebondir sur la platerforme, detruire une brique lorsqu'il y a collision, augmentation des points, changement dangle selon la position du rebond
 }
