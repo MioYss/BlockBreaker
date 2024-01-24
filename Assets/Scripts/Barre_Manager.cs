@@ -69,7 +69,7 @@ public class Bar_Mouvement : MonoBehaviour
     public IEnumerator Temps_De_Tir()
     {
         Debug.Log("power up activer mama2");
-        for (int i = 0; i <= 10; i++)
+        for (int i = 0; i <= 5; i++)
         {
 
             
