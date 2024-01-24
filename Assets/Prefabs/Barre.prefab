@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8144273696453618277}
   m_Layer: 0
   m_Name: Barre
-  m_TagString: Untagged
+  m_TagString: Barre
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

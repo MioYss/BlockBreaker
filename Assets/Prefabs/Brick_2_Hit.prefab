@@ -145,10 +145,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   brick_pv: 2
   Brick: {fileID: 4119866715637689220}
-  BrickRenderer: {fileID: 0}
+  BrickRenderer: {fileID: 2624887679212433517}
   spawn_bonus_joueur: {fileID: 6195433406617566937, guid: e66cf8538ab036240b85eb4c7b22ab74, type: 3}
   parent_ennemies: {fileID: 7109590924090065319}
-  manager: {fileID: 0}
+  manager: {fileID: 6911502901012793029, guid: 088afdca1d4fc934c86182071c9bb491, type: 3}
   color_array:
   - {r: 0, g: 0, b: 1, a: 1}
   - {r: 0, g: 1, b: 0, a: 1}

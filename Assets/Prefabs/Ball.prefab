@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1691615618101473187}
   - component: {fileID: 4425146676510640749}
   - component: {fileID: 2578250618693198188}
-  - component: {fileID: -6153262087070704960}
+  - component: {fileID: 5460355918309205972}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Ball
@@ -137,7 +137,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -149,7 +149,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &-6153262087070704960
+--- !u!114 &5460355918309205972
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
