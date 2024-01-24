@@ -42,7 +42,7 @@ public class Bar_Mouvement : MonoBehaviour
         // prend le power up
         Debug.Log("power up actif");
 
-        if (other.gameObject.tag == "Ball")
+        if (other.gameObject.tag == "Power_Up")
         {
             Bullet_Shoot.gameObject.SetActive(true);
             Power_Up_Tir();
