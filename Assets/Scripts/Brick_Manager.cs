@@ -53,7 +53,11 @@ public class Brick_Manager : MonoBehaviour
         if (brick_pv <= 0)
         {
             Destroy(this.gameObject);
-            Instantiate(spawn_bonus_joueur, parent_ennemies.position, Quaternion.identity);
+            if (Random.Range(0,15) >=14) 
+            {
+                Instantiate(spawn_bonus_joueur, parent_ennemies.position, Quaternion.identity);
+            }
+
         }
     }
 
