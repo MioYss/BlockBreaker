@@ -2223,6 +2223,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8417573168293998894, guid: 2b9db3c9a30cb574d84216c369e2f2d4, type: 3}
   m_PrefabInstance: {fileID: 412562172}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &438152451 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5993952961345458187, guid: 1084815555e0b934dbed8260dd21fe81, type: 3}
+  m_PrefabInstance: {fileID: 7703317036625450618}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &449116755
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2819,7 +2824,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -5135,6 +5140,10 @@ PrefabInstance:
       propertyPath: limit_R
       value: 
       objectReference: {fileID: 858089733}
+    - target: {fileID: 5460355918309205972, guid: 4e5b9656770f77a4bb48d47722e563b0, type: 3}
+      propertyPath: barre_transform
+      value: 
+      objectReference: {fileID: 438152451}
     - target: {fileID: 5686863654403305572, guid: 4e5b9656770f77a4bb48d47722e563b0, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0
