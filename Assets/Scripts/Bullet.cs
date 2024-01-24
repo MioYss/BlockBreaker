@@ -17,12 +17,12 @@ public class Bullet : MonoBehaviour
         bullet_rb.velocity = Vector2.up * 20;
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         var brick = collision.gameObject.GetComponent<Brick_Manager>();
         if (brick)
         {            
-            Brick.Perte_PV_Brick();
+            brick.Perte_PV_Brick();
             Destroy(this.gameObject);
         }
     }

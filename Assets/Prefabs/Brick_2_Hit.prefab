@@ -29,7 +29,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.9229426, y: 1.5905688, z: 0}
-  m_LocalScale: {x: 4, y: 2, z: 1}
+  m_LocalScale: {x: 2, y: 0.8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -145,5 +145,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   brick_pv: 2
   Brick: {fileID: 4119866715637689220}
+  BrickRenderer: {fileID: 0}
   spawn_bonus_joueur: {fileID: 6195433406617566937, guid: e66cf8538ab036240b85eb4c7b22ab74, type: 3}
   parent_ennemies: {fileID: 7109590924090065319}
+  manager: {fileID: 0}
+  color_array:
+  - {r: 0, g: 0, b: 1, a: 1}
+  - {r: 0, g: 1, b: 0, a: 1}
+  - {r: 1, g: 0, b: 0, a: 1}

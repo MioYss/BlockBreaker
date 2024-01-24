@@ -143,9 +143,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b25306251afcb14085133f3f4ebd190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.4
+  speed: 0.05
   limit_L: {fileID: 7164246672794707013, guid: 061b8cee1bc5b6946a1378ce19ec91cc, type: 3}
   limit_R: {fileID: 6334386783745802787, guid: 5a588cc2921e9bd4f938085094162144, type: 3}
-  parent_L: {fileID: 823229995308896957, guid: 882b8d4eff67f224eb56ecd6934ffde3, type: 3}
-  parent_R: {fileID: 8951000286906295556, guid: 3c5a7f770c19b2f4eab88aaf6a96d082, type: 3}
-  Bullet_Shoot: {fileID: 43762699000071105, guid: f4532786faa08b3448d06c26d9dcd149, type: 3}
+  parent_L: {fileID: 5993952961345458187}
+  parent_R: {fileID: 5993952961345458187}
+  Bullet_Shoot: {fileID: 2626626421911542947, guid: f4532786faa08b3448d06c26d9dcd149, type: 3}
+  spawn_L: {x: 0, y: 0}
+  spawn_R: {x: 0, y: 0}
