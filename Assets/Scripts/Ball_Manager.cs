@@ -18,7 +18,7 @@ public class Ball_Manager : MonoBehaviour
 
     public Vector2 speed;
 
-    private float hit_pos;
+    public float hit_pos;
 
     public Transform limit_L;
     public Transform limit_R;
