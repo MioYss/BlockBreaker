@@ -143,7 +143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b25306251afcb14085133f3f4ebd190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.05
+  speed: 1
   limit_L: {fileID: 7164246672794707013, guid: 061b8cee1bc5b6946a1378ce19ec91cc, type: 3}
   limit_R: {fileID: 6334386783745802787, guid: 5a588cc2921e9bd4f938085094162144, type: 3}
   parent_L: {fileID: 5993952961345458187}
